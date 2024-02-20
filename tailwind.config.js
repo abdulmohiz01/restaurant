@@ -7,12 +7,18 @@ module.exports = {
   ],
   theme: {
     screens: {
-      sm: '640px',
+      sm: '540px',
       md: '768px',
       lg: '960px',
       xl: '1200px',
     },
     extend: {
+      backgroundImage: {
+        leftimg: 'url("/Hero-Left.jpg")',
+        rightimg: 'url("/hero-right.jpg")',
+        // circleStar: 'url("/circle-star.svg")',
+        // site: 'url("/site-bg.svg")',
+      },
       colors: {
         primary: '#303030',
         accent: '#ffc200',

@@ -1,11 +1,16 @@
 import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 export default function Home() {
   return (
-    <div className=''>
-    <Hero/>
-      {/* <h1 className=" text-5xl text-primary">This is using a custom font</h1>
-      <h1 className="font-grandhotel text-5xl text-accent">This is using a grandhotel font</h1>
-      <h1 className="font-monsterrat text-5xl">This is using a monsterrat font</h1> */}
+    <div className='h-[100vh]'>
+      <div className="absolute z-[-10] w-full flex bg-primary  overflow-hidden">
+        <img src="/Hero-Left.jpg" alt="" width={670} className="" />
+        <img src="/hero-right.png" alt="" width={510} className="absolute ml-[480px] mx-[50px] hidden xl:flex md:flex md:h-[880px] " />
+      </div>
+      <Navbar />
+      <Hero />
+      
     </div>
   );
 }
